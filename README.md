@@ -191,7 +191,7 @@ http://（IPv4 アドレス）
 
 Guardを利用したマルチログイン認証を採用しています。
 
-管理者アカウント
+## 管理者アカウント
 
 email -> admin@example.com
 
@@ -199,7 +199,7 @@ password -> admin1234
 
 <img width="1202" height="659" alt="スクリーンショット (5760)" src="https://github.com/user-attachments/assets/4dfe1eac-e083-4d73-8331-b963e34fa1c2" />
 
-店舗代表者アカウント(管理画面から店舗オーナーを決定すること)
+## 店舗代表者アカウント(管理画面から店舗オーナーを決定すること)
 
 <img width="1313" height="631" alt="スクリーンショット (5765)" src="https://github.com/user-attachments/assets/e0f5708e-9e4d-43f8-a49b-80cae37ad9f5" />
 
@@ -211,7 +211,7 @@ password -> admin1234
 
 email -> ○○○○@yahoo.com ~ ○○△△@yahoo.com
 
-password -> ○○○○1234 ~ ○○○○1234
+password -> ○○○○1234 ~ ○○○○1234 (20人分)
 
 # メール機能
 
