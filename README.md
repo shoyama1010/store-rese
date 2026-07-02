@@ -180,7 +180,8 @@ http://172.31.42.205（IPv4 アドレス）
 - 店舗口コミ管理
 - CSVインポート（開発中）
 
-# 認証・権限管理
+# 認証・権限管理(管理者及び店舗代表者用管理画面ログイン機能)
+<img width="1196" height="615" alt="スクリーンショット (5761)" src="https://github.com/user-attachments/assets/b4f7bfff-8c48-4d31-9fca-437160711c98" />
 
 以下3種類の認証を実装しています。
 
@@ -189,6 +190,14 @@ http://172.31.42.205（IPv4 アドレス）
 - Admin
 
 Guardを利用したマルチログイン認証を採用しています。
+
+管理者アカウント
+
+email -> admin@admin.com
+
+password -> admin1234
+
+<img width="1202" height="659" alt="スクリーンショット (5760)" src="https://github.com/user-attachments/assets/4dfe1eac-e083-4d73-8331-b963e34fa1c2" />
 
 # メール機能
 
