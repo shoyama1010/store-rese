@@ -199,6 +199,20 @@ password -> admin1234
 
 <img width="1202" height="659" alt="スクリーンショット (5760)" src="https://github.com/user-attachments/assets/4dfe1eac-e083-4d73-8331-b963e34fa1c2" />
 
+店舗代表者アカウント(管理画面から店舗オーナーを決定すること)
+
+<img width="1313" height="631" alt="スクリーンショット (5765)" src="https://github.com/user-attachments/assets/e0f5708e-9e4d-43f8-a49b-80cae37ad9f5" />
+
+<img width="1215" height="662" alt="スクリーンショット (5766)" src="https://github.com/user-attachments/assets/e363d442-1246-416e-8901-9cc157bf135d" />
+
+<img width="1203" height="656" alt="スクリーンショット (5767)" src="https://github.com/user-attachments/assets/6fbc0514-e806-4856-a6ff-6b0b71a933af" />
+
+上記にオーナー名前、メールアドレス、パスワードを設定して、「登録⇒更新」する。
+
+email -> ○○○○@yahoo.com ~ ○○△△@yahoo.com
+
+password -> ○○○○1234 ~ ○○○○1234
+
 # メール機能
 
 MailHogを利用したメール送信機能を実装しています。
