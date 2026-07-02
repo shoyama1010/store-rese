@@ -193,7 +193,7 @@ Guardを利用したマルチログイン認証を採用しています。
 
 管理者アカウント
 
-email -> admin@admin.com
+email -> admin@example.com
 
 password -> admin1234
 
