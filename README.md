@@ -1,4 +1,4 @@
-# Rese-store
+# Store-rese
 飲食店予約サービスアプリです。
 <img width="1295" height="665" alt="スクリーンショット (5583)" src="https://github.com/user-attachments/assets/a2461dcb-6f13-4aac-8b8c-e5af9a578352" />
 
