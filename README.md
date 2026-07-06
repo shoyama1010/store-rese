@@ -95,7 +95,7 @@ MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
 
 MAIL_FROM_ADDRESS=noreply@example.com
-MAIL_FROM_NAME="ReseManagement"
+MAIL_FROM_NAME="StoreRese"
 
 STRIPE_KEY=取得した公開キー
 STRIPE_SECRET=取得したシークレットキー
