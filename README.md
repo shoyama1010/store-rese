@@ -3,7 +3,7 @@
 <img width="1295" height="665" alt="スクリーンショット (5583)" src="https://github.com/user-attachments/assets/a2461dcb-6f13-4aac-8b8c-e5af9a578352" />
 
 # アプリ概要
-Reseは、ユーザーが飲食店を検索・予約できる予約管理サービスです。
+Store-reseは、ユーザーが飲食店を検索・予約できる予約管理サービスです。
 
 管理者・店舗代表者・一般ユーザーの3つの権限を持ち、それぞれ異なる機能を利用できます。
 <img width="1295" height="662" alt="スクリーンショット (5582)" src="https://github.com/user-attachments/assets/7e9ab6d8-3972-4b7c-8632-bc5340e06e37" />
