@@ -18,6 +18,8 @@ export default function HomePage() {
   const [area, setArea] = useState("all");
   const [genre, setGenre] = useState("all");
   const [sort, setSort] = useState("random");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const fetchShops = async () => {
@@ -70,15 +72,57 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-[#eeeeee] px-6 py-8">
+
+      {menuOpen && (
+        <div className="fixed inset-0 z-50 bg-white">
+          <button
+            type="button"
+            onClick={() => setMenuOpen(false)}
+            className="absolute left-[100px] top-[105px] flex h-10 w-10 items-center justify-center rounded bg-[#305dff] text-2xl text-white shadow-md"
+          >
+            ×
+          </button>
+
+          <nav className="flex h-screen flex-col items-center justify-center gap-6 text-3xl text-[#305dff]">
+            <button onClick={() => setMenuOpen(false)}>Home</button>
+
+            {isLoggedIn ? (
+              <>
+                <button
+                  onClick={() => {
+                    setIsLoggedIn(false);
+                    setMenuOpen(false);
+                  }}
+                >
+                  Logout
+                </button>
+                <a href="http://localhost/mypage">Mypage</a>
+              </>
+            ) : (
+              <>
+                <a href="http://localhost/register">Registration</a>
+                <a href="http://localhost/login">Login</a>
+              </>
+            )}
+
+            <a href="http://localhost/multi/login">Multi-Login</a>
+          </nav>
+        </div>
+      )}
+
       {/* <header className="mx-auto flex max-w-[1160px] items-center justify-between"> */}
       <header className="mx-auto flex max-w-[1230px] items-center justify-between">
         <div className="flex items-center gap-4">
           {/* <button className="flex h-9 w-9 items-center justify-center rounded bg-[#305dff] text-white shadow-md">
             ≡
           </button> */}
-          <button className="flex h-10 w-10 items-center justify-center rounded bg-[#305dff] text-white shadow-md">
+          <button 
+            type="button"
+            onClick={() => setMenuOpen(true)}
+          className="flex h-10 w-10 items-center justify-center rounded bg-[#305dff] text-white shadow-md">
             ☰
           </button>
+
           <h1 className="text-3xl font-bold text-[#305dff]">Rese</h1>
         </div>
 
