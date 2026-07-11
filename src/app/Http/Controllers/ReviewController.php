@@ -65,7 +65,9 @@ class ReviewController extends Controller
     // 口コミを更新するメソッド
     public function update(ReviewRequest $request, Review $review)
     {
+        // ポリシーで権限チェック
         $this->authorize('update', $review);
+        
         $imagePath = $review->image_path;
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('reviews', 'public');

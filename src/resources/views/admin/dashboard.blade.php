@@ -7,7 +7,7 @@
 @section('main')
 <div class="admin-dashboard">
     <header class="admin-dashboard__header">
-        <h1 class="admin-dashboard__logo">ReseControlle</h1>
+        <h1 class="admin-dashboard__logo">ReseAdmin</h1>
 
         <form method="POST" action="{{ route('admin.logout') }}">
             @csrf
