@@ -165,6 +165,13 @@ http://（IPv4 アドレス）
 - 口コミ削除
 - 口コミ一覧表示
 
+予約変更機能
+<img width="1245" height="669" alt="スクリーンショット (5856)" src="https://github.com/user-attachments/assets/68c4a94e-1e78-4af7-961d-25025fa95dc8" />
+<img width="1241" height="682" alt="スクリーンショット (5857)" src="https://github.com/user-attachments/assets/6e11cfaf-4011-41c8-b140-fcfb3328fd32" />
+
+口コミ編集機能
+<img width="1269" height="662" alt="スクリーンショット (5640)" src="https://github.com/user-attachments/assets/8d5ea5dc-20ef-4c4e-b6fe-6a239022ac62" />
+
 ## 店舗代表者機能
 
 - ログイン
