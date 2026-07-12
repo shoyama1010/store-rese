@@ -1,0 +1,78 @@
+.reservation-edit {
+    min-height: calc(100vh - 100px);
+    padding: 60px 20px;
+    background: #f2f2f2;
+}
+
+.reservation-edit__inner {
+    width: min(100%, 520px);
+    margin: 0 auto;
+    padding: 35px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-edit__title {
+    margin-bottom: 25px;
+    color: #3560f6;
+    text-align: center;
+}
+
+.reservation-edit__shop {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.reservation-edit__group {
+    margin-bottom: 20px;
+}
+
+.reservation-edit__group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.reservation-edit__group input,
+.reservation-edit__group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.reservation-edit__error {
+    margin-top: 6px;
+    color: #e53935;
+    font-size: 14px;
+}
+
+.reservation-edit__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.reservation-edit__back,
+.reservation-edit__submit {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.reservation-edit__back {
+    background: #ccc;
+    color: #333;
+}
+
+.reservation-edit__submit {
+    background: #3560f6;
+    color: #fff;
+}

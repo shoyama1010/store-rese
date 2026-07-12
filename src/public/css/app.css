@@ -439,6 +439,44 @@
     vertical-align: middle;
 }
 
+.status_card_actions{
+    display:flex;
+    gap:12px;
+    margin-top:18px;
+}
+
+.reservation-cancel-btn{
+    display:inline-block;
+    padding:8px 18px;
+    border:none;
+    border-radius:5px;
+    background:#ff5b5b;
+    color:#fff;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.reservation-cancel-btn:hover{
+    background:#e23b3b;
+}
+
+.reservation-edit-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 18px;
+    background:#fff;
+    color:#305dff;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.reservation-edit-btn:hover{
+    background:#f5f5f5;
+}
+
 .cancel {
     cursor: pointer;
 }

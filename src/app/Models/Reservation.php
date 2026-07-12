@@ -34,8 +34,7 @@ class Reservation extends Model
 
         // 予約の作成
         $reservation = Reservation::create($param);
-        // `Reservation` モデルに対して、`$param` を使って新しい予約を作成し、データベースに保存。
-        // `create` メソッドを使うため、`$fillable` に定義された属性のみが保存される。
+       
         return $reservation;
     }
 

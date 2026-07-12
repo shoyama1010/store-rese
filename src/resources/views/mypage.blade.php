@@ -10,8 +10,14 @@
     <div class="status">
       <h3 class="status__ttl">予約状況</h3>
 
-      @foreach ($user->reservations as $reservation)
+      <!-- 予約完了メッセージ -->
+      @if (session('message'))
+      <div class="mypage__message">
+        {{ session('message') }}
+      </div>
+      @endif
 
+      @foreach ($user->reservations as $reservation)
       <div class="status__card">
         <div class="flex align-items-center between status__card__top">
           <img src="/img/time.png" alt="time-icon" width="25px" height="25px" />
@@ -21,7 +27,7 @@
             @csrf
             <input class="cancel" type="image" src="/img/cross.png" alt="送信する" width="25px" height="25px" onclick='return confirm("予約を取り消しますか？");'>
             <!-- // キャンセルボタンとして画像を使用。クリックすると確認メッセージが表示され、OKなら予約キャンセルを実行。 -->
-        </form>
+          </form>
         </div>
         <table class="status__card__bottom">
           <tr>
@@ -43,6 +49,17 @@
             <td>{{$reservation->pivot->user_num}}人</td>
           </tr>
         </table>
+
+        <div class="status__card-actions">
+          <a
+            class="reservation-edit-btn"
+            href="{{ route('reservation.edit', $reservation->pivot->id) }}">
+            予約変更
+          </a>
+
+          
+
+        </div>
       </div>
       @endforeach
     </div>
@@ -74,21 +91,21 @@
               @if( Auth::check() )
               <!-- // ユーザーがログインしている場合のみ、「いいね」ボタンを表示。 -->
 
-                @if(count($shop->likes)==0)
-                <!-- // ユーザーがその店舗に「いいね」していない場合。 -->
+              @if(count($shop->likes)==0)
+              <!-- // ユーザーがその店舗に「いいね」していない場合。 -->
 
-                <form method="POST" action="{{ route('like', ['shop_id' => $shop->id]) }}">
-                  @csrf
-                  <input class="shop-card__content__icon inactive" type="image" src="/img/unlike.png" alt="いいね" width="32px" height="32px">
-                  <!-- // いいねボタンとして「unlike」のアイコンを表示し、クリックすると「いいね」が登録される。 -->
-                </form>
-                @else
+              <form method="POST" action="{{ route('like', ['shop_id' => $shop->id]) }}">
                 @csrf
-                <form class="ml-a" method="POST" action="{{ route('unlike', ['shop_id' => $shop->id]) }}">
-                  <input class="shop-card__content__icon inactive" type="image" src="/img/like.png" alt="いいねを外す" width="32px" height="32px">
-                  <!-- // すでに「いいね」している場合は、いいね解除のアイコンを表示し、クリックでいいねを外す。 -->
-                </form>
-                @endif
+                <input class="shop-card__content__icon inactive" type="image" src="/img/unlike.png" alt="いいね" width="32px" height="32px">
+                <!-- // いいねボタンとして「unlike」のアイコンを表示し、クリックすると「いいね」が登録される。 -->
+              </form>
+              @else
+              @csrf
+              <form class="ml-a" method="POST" action="{{ route('unlike', ['shop_id' => $shop->id]) }}">
+                <input class="shop-card__content__icon inactive" type="image" src="/img/like.png" alt="いいねを外す" width="32px" height="32px">
+                <!-- // すでに「いいね」している場合は、いいね解除のアイコンを表示し、クリックでいいねを外す。 -->
+              </form>
+              @endif
               @endif
             </div>
           </div>

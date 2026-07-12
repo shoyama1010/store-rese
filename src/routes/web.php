@@ -44,6 +44,14 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/reservation', [ReservationsController::class, 'create'])->name('reserve.create');
     Route::post('/reserve/{reservation_id}', [ReservationsController::class, 'delete'])->name('reserve.delete');
+    Route::get(
+        '/reservation/{reservation}/edit',
+        [ReservationsController::class, 'edit']
+    )->name('reservation.edit');
+    Route::put(
+        '/reservation/{reservation}',
+        [ReservationsController::class, 'update']
+    )->name('reservation.update');
 
     Route::get('/shop/{shopId}/reviews', [ReviewController::class, 'showReviewsByShop'])->name('reviews.by_shop');
     Route::get('/shops/{shop}/reviews/create', [ReviewController::class, 'create'])->name('reviews.create');
@@ -111,13 +119,13 @@ Route::prefix('owner')->name('owner.')->middleware('auth:owner')->group(function
 
     Route::get('/shop/edit', [OwnerController::class, 'editShop'])->name('shop.edit');
     Route::put('/shop/update', [OwnerController::class, 'updateShop'])->name('shop.update');
-   
+
     Route::get('/reservations', [OwnerController::class, 'reservations'])
         ->name('reservations.index');
 
     Route::post('/reservations/{reservation}/send-mail', [OwnerController::class, 'sendReservationMail'])
         ->name('reservations.send_mail');
-    
+
     // Route::resource('shops', ShopsController::class);
     // Route::resource('reservations', ReservationsController::class);
 });
