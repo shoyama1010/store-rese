@@ -5,17 +5,17 @@
 
   <h2 class="username">{{ $user->name }}さん</h2>
 
+  <!-- 予約完了メッセージ -->
+  @if (session('message'))
+  <div class="mypage-message">
+    {{ session('message') }}
+  </div>
+  @endif
+
   <div class="flex between mypage">
     <!-- 左側 予約状況を表示-->
     <div class="status">
       <h3 class="status__ttl">予約状況</h3>
-
-      <!-- 予約完了メッセージ -->
-      @if (session('message'))
-      <div class="mypage__message">
-        {{ session('message') }}
-      </div>
-      @endif
 
       @foreach ($user->reservations as $reservation)
       <div class="status__card">
@@ -56,8 +56,6 @@
             href="{{ route('reservation.edit', $reservation->pivot->id) }}">
             予約変更
           </a>
-
-          
 
         </div>
       </div>

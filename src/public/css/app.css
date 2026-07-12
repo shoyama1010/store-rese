@@ -424,6 +424,12 @@
     color: #ffffff;
     border-radius: 5px;
     box-shadow: 2px 2px 4px gray;
+    transition:.25s;
+}
+
+.status__card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 24px rgba(0,0,0,.18);
 }
 
 .status__card__top {
@@ -475,6 +481,54 @@
 
 .reservation-edit-btn:hover{
     background:#f5f5f5;
+}
+
+.mypage-message {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: min(100%, 465px);
+    margin: 0 0 28px;
+    padding: 14px 16px;
+    color: #17633b;
+    background: #ecfdf3;
+    border: 1px solid #a7e3bf;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(30, 120, 70, 0.1);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mypage-message__icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    background: #22a65a;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.mypage-message__text {
+    flex: 1;
+}
+
+.mypage-message__close {
+    padding: 0;
+    color: #43805c;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.mypage-message__close:hover {
+    color: #17633b;
 }
 
 .cancel {

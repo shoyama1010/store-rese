@@ -62,18 +62,6 @@ class ReservationsController extends Controller
             ->with('message', '予約内容を変更しました。');
     }
 
-    // public function create(ReservationRequest $request)
-    // {
-    //     Reservation::create([
-    //         'date' => $request->date,
-    //         'time' => $request->time,
-    //         'user_num' => $request->user_num,
-    //         'user_id' => Auth::id(),
-    //         'shop_id' => $request->shop_id,
-    //     ]);
-
-    //     return view('reservation');
-    // }
 
     public function delete($reservation_id)
     {
