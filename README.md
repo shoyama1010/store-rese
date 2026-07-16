@@ -134,7 +134,7 @@ http://localhost:8025
 
 ## 本番環境（AWS：EC2）
 
-http://（IPv4 アドレス）
+http://IPアドレス
 
 # テーブル設計
 
