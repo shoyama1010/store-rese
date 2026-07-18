@@ -118,9 +118,9 @@ php artisan migrate
 php artisan db:seed
 ```
 
-# URL
+# URL（アプリケーション）
 
-## ローカル環境（アプリケーション）
+## ローカル環境
 
 http://localhost
 
