@@ -134,7 +134,7 @@ http://localhost:8025
 
 ## 本番環境（AWS：EC2）
 
-http://IPアドレス
+http://IPアドレス、 key名：rese-key
 
 # テーブル設計
 
