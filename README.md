@@ -144,7 +144,7 @@ http://IPアドレス、 key名：rese-key
 
 <img width="3149" height="2393" alt="mermaid-diagram (3)" src="https://github.com/user-attachments/assets/90ec6617-b2a7-4131-b362-d99bf5bb4e96" />
 
-# １．実装機能（バックエンドでの表示）
+# 実装機能（backend）
 
 ## 一般ユーザー機能
 
@@ -245,18 +245,22 @@ FormRequestを採用しています。
 - 口コミ編集
 - CSVアップロード
 
-# ２．実装機能（フロントエンド表示：開発中）
+## 実装機能（frontend：開発中）
 
-## 一般ユーザー機能
+- 起動方法
+- store-rese直下にて　cd admin-frontend
+- npm run dev
+
+### ローカルURL 
+
+http://localhost/3000
+
+### 一般ユーザー機能
 - ログイン（開発中）
 - 店舗一覧表示
 - 店舗検索
 - エリア検索
 - ジャンル検索
-
-### アプリケーション 
-
-http://localhost/3000
 
 <img width="1239" height="675" alt="スクリーンショット (5658)" src="https://github.com/user-attachments/assets/79cd178b-0b4e-4ee6-9a8a-df2b723c988e" />
 
