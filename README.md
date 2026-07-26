@@ -37,7 +37,7 @@ Laravel（Blade）での従来のCRUDから、 徐々にNext.jsを用いたSPA�
 本アプリはLaravel Bladeを中心に構築して、Monorepo（モノレポ）タイプで、バックエンドとの統合された形です。
 
 - Next.js
-- React
+- TypeScript
 - Node.js
 
 ## 開発環境
