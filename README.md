@@ -329,6 +329,7 @@ php artisan test --env=testing --filter=ReviewFeatureTest
 - 認証をfortifyでは設定していなかった（与えられた案件の要件には、当時それは入ってなかった）ので、次回作り直すか同じようものを作る時は、fortifyを入れるようにしたいです。
 - 上記fortifyを入れた後、「メール認証機能」も整備したいです。
 - SPA開発が未達なので、今後Inertia.jsを使用し、モノリシックなLaravelアプリケーションとして、下記の理由で構築していきます。
+
   ①プロジェクト構造がシンプル（1つのリポジトリ）
  
   ②CORSやAPI認証の設定が不要
