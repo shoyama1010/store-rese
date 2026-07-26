@@ -134,15 +134,15 @@ http://localhost:8025
 
 ## 本番環境（AWS：EC2）
 
-AWS 認証ログイン
+①AWS 認証ログイン
 
-EC2 インスタンス起動
+②EC2 インスタンス起動
 
-プロジェクト直下　cd store-rese
+③cd store-rese(プロジェクト直下にして)
 
-ssh -i ~/.ssh/key名.pem ubuntu@IPアドレス
+④ssh -i ~/.ssh/ key名.pem ubuntu@IPアドレス
 
-URL⇒　http://IPアドレス
+⑤URL⇒　http://IPアドレス
 
 # テーブル設計
 
