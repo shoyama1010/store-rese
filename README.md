@@ -140,7 +140,7 @@ http://localhost:8025
 
 ③cd store-rese(プロジェクト直下にして)
 
-④ssh -i ~/.ssh/ key名.pem ubuntu@IPアドレス
+④「○○ -〇 ~/.○○/ ○○.○○ ubuntu@IPアドレス」にて、サーバーに入る（EC2にログインする）
 
 ⑤URL⇒　http://IPアドレス
 
