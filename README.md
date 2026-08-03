@@ -137,6 +137,8 @@ http://localhost:8025
 - AWS 認証ログイン ⇒ EC2 インスタンス起動
 - URL⇒　http://IPアドレス
 
+■ EC２の環境において、メモリ不足の補うために、将来的に「Swap」を追加予定。（phpmyadminとmailhogは停止させ、MYSQLを立ち上げるため） 
+
 # テーブル設計
 
 <img width="923" height="482" alt="スクリーンショット (5575)" src="https://github.com/user-attachments/assets/f17cda8b-681f-4424-9c9b-10b3113977ef" />
