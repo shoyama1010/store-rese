@@ -248,7 +248,7 @@ FormRequestを採用しています。
 - 口コミ編集
 - CSVアップロード
 
-## 実装機能（frontend：開発中）
+# 実装機能（frontend：開発中）
 
 - 起動方法
 - store-rese直下にて　cd admin-frontend
