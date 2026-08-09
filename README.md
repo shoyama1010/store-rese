@@ -34,7 +34,7 @@ Laravel（Blade）での従来のCRUDから、 徐々にNext.jsを用いたSPA�
 - Inertia-Laravel
 
 ## フロントエンド(開発中)
-本アプリはLaravel Bladeを中心に構築して、Monorepo（モノレポ）タイプで、バックエンドとの統合された形です。
+本アプリはLaravel Bladeを中心に構築して、フロントエンドをNext.jsで構築し、Monorepo（モノレポ）タイプで、バックエンドとの統合された形です。
 
 - Next.js
 - TypeScript
