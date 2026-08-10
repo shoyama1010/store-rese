@@ -33,12 +33,6 @@ Laravel（Blade）での従来のCRUDから、 徐々にNext.jsを用いたSPA�
 - JavaScript
 - Inertia-Laravel
 
-## フロントエンド(開発中)
-本アプリはLaravel Bladeを中心に構築して、フロントエンドをNext.jsで構築し、Monorepo（モノレポ）タイプで、バックエンドとの統合された形です。
-
-- Next.js
-- TypeScript
-- Node.js
 
 ## 開発環境
 
@@ -131,6 +125,21 @@ http://localhost:8081
 ## MailHog
 
 http://localhost:8025
+
+## フロントエンド(開発中)
+本アプリはLaravel Bladeを中心に構築して、フロントエンドをNext.jsで構築し、Monorepo（モノレポ）タイプで、バックエンドとの統合された形です。
+
+- Next.js
+- TypeScript
+- Node.js
+
+起動方法
+
+store-rese直下にて
+
+cd admin-frontend
+
+npm run dev
 
 ## 本番環境（AWS：EC2）
 
