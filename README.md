@@ -41,37 +41,37 @@ Laravel（Blade）での従来のCRUDから、 徐々にNext.jsを用いたSPA�
 
 # 環境構築
 
-## 1 Gitリポジトリをクローン
+### 1 Gitリポジトリをクローン
 
 ```bash
 git clone https://github.com/shoyama1010/rese.git
 ```
 
-## 2 Dockerコンテナを起動
+### 2 Dockerコンテナを起動
 
 ```bash
 docker-compose up -d --build
 ```
 
-## 3 PHPコンテナへログイン
+### 3 PHPコンテナへログイン
 
 ```bash
 docker-compose exec php bash
 ```
 
-## 4 Composerパッケージをインストール
+### 4 Composerパッケージをインストール
 
 ```bash
 composer install
 ```
 
-## 5 .envファイルを作成
+### 5 .envファイルを作成
 
 ```bash
 cp .env.example .env
 ```
 
-## 6 .env設定
+### 6 .env設定
 
 ```env
 DB_HOST=mysql
@@ -93,19 +93,19 @@ STRIPE_KEY=取得した公開キー
 STRIPE_SECRET=取得したシークレットキー
 ```
 
-## 7 アプリケーションキー生成
+### 7 アプリケーションキー生成
 
 ```bash
 php artisan key:generate
 ```
 
-## 8 マイグレーション実行
+### 8 マイグレーション実行
 
 ```bash
 php artisan migrate
 ```
 
-## 9 ダミーデータ投入
+### 9 ダミーデータ投入
 
 ```bash
 php artisan db:seed
@@ -123,14 +123,14 @@ http://localhost:8081
 
 http://localhost:8025
 
-## フロントエンド(一部公開)
+# フロントエンド(一部公開)
 本アプリはLaravel Bladeを中心に構築して、フロントエンドをNext.jsで構築し、Monorepo（モノレポ）タイプで、バックエンドとの統合された形です。
 
 - Next.js
 - TypeScript
 - Node.js
 
-起動方法
+## 起動方法
 
 store-rese直下にて
 
@@ -138,9 +138,11 @@ cd admin-frontend
 
 npm run dev
 
-## ローカル環境（フロントエンド：URL）
+## ローカル環境（フロントエンド：一部開発URL）
 
-http://localhost:3000
+http://localhost:3000 (店舗一覧画面)
+
+http://localhost:3000/shops/[id] (店舗詳細画面)
 
 ## 本番環境（AWS：EC2）
 
