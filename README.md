@@ -33,8 +33,7 @@ Laravel（Blade）での従来のCRUDから、 徐々にNext.jsを用いたSPA�
 - JavaScript
 - Inertia-Laravel
 
-
-## 開発環境
+## インフラ
 
 - Docker
 - Docker Compose
@@ -112,9 +111,7 @@ php artisan migrate
 php artisan db:seed
 ```
 
-# URL（アプリケーション）
-
-## ローカル環境
+## ローカル環境（バックエンド：URL）
 
 http://localhost
 
@@ -126,7 +123,7 @@ http://localhost:8081
 
 http://localhost:8025
 
-## フロントエンド(開発中)
+## フロントエンド(一部公開)
 本アプリはLaravel Bladeを中心に構築して、フロントエンドをNext.jsで構築し、Monorepo（モノレポ）タイプで、バックエンドとの統合された形です。
 
 - Next.js
@@ -140,6 +137,10 @@ store-rese直下にて
 cd admin-frontend
 
 npm run dev
+
+## ローカル環境（フロントエンド：URL）
+
+http://localhost:3000
 
 ## 本番環境（AWS：EC2）
 
