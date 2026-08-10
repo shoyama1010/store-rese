@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { api } from "@/lib/api";
+import Link from "next/link";
 
 type Shop = {
   id: number;
@@ -198,11 +199,15 @@ export default function HomePage() {
               <p className="mb-3 text-sm">
                 #{shop.area?.name} #{shop.genre?.name}
               </p>
-
-              <button className="rounded bg-[#305dff] px-4 py-1.5 text-sm text-white">
-              {/* <button className="rounded-md bg-[#305dff] px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition"> */}
+              <Link
+                href={`/shops/${shop.id}`}
+                className="inline-block rounded bg-[#305dff] px-4 py-1.5 text-sm text-white"
+              >
                 詳しくみる
-              </button>
+              </Link>
+              {/* <button className="rounded bg-[#305dff] px-4 py-1.5 text-sm text-white">
+                詳しくみる
+              </button> */}
             </div>
           </article>
         ))}

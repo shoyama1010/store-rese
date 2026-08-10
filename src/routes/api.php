@@ -56,3 +56,11 @@ Route::get('/shops', function () {
         'shops' => $shops,
     ]);
 });
+
+Route::get('/shops/{shop}', function (Shop $shop) {
+    $shop->load(['area', 'genre']);
+
+    return response()->json([
+        'shop' => $shop,
+    ]);
+});
