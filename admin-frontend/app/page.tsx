@@ -124,7 +124,7 @@ export default function HomePage() {
             ☰
           </button>
 
-          <h1 className="text-3xl font-bold text-[#305dff]">Rese</h1>
+          <h1 className="text-3xl font-bold text-[#305dff]">RSV</h1>
         </div>
 
         <div className="flex h-11 w-[540px] items-center rounded bg-white shadow-md">
