@@ -1,13 +1,13 @@
 # Store-rese
 飲食店予約サービスアプリです。
 <img width="1276" height="662" alt="スクリーンショット (6462)" src="https://github.com/user-attachments/assets/c84757dd-7059-4a83-adeb-f6028e5cae91" />
-<img width="1284" height="664" alt="スクリーンショット (6464)" src="https://github.com/user-attachments/assets/a38c62b2-64f3-4853-8c75-815724c0daa4" />
+
 
 # アプリ概要
 Store-reseは、ユーザーが飲食店を検索・予約できる予約管理サービスです。
 
 管理者・店舗代表者・一般ユーザーの3つの権限を持ち、それぞれ異なる機能を利用できます。
-<img width="1295" height="662" alt="スクリーンショット (5582)" src="https://github.com/user-attachments/assets/7e9ab6d8-3972-4b7c-8632-bc5340e06e37" />
+<img width="1284" height="664" alt="スクリーンショット (6464)" src="https://github.com/user-attachments/assets/a38c62b2-64f3-4853-8c75-815724c0daa4" />
 
 # 作成した目的
 
