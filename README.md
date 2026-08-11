@@ -226,7 +226,7 @@ password -> admin1234
 
 <img width="1327" height="657" alt="スクリーンショット (6465)" src="https://github.com/user-attachments/assets/928aebd4-6719-44a2-8b41-6b4ab91dde03" />
 
-<img width="1215" height="662" alt="スクリーンショット (5766)" src="https://github.com/user-attachments/assets/e363d442-1246-416e-8901-9cc157bf135d" />
+<img width="1278" height="666" alt="スクリーンショット (6466)" src="https://github.com/user-attachments/assets/8dcb3ace-cd32-4770-a142-01b45833b57e" />
 
 <img width="1203" height="656" alt="スクリーンショット (5767)" src="https://github.com/user-attachments/assets/6fbc0514-e806-4856-a6ff-6b0b71a933af" />
 
