@@ -228,7 +228,8 @@ password -> admin1234
 
 <img width="1278" height="666" alt="スクリーンショット (6466)" src="https://github.com/user-attachments/assets/8dcb3ace-cd32-4770-a142-01b45833b57e" />
 
-<img width="1203" height="656" alt="スクリーンショット (5767)" src="https://github.com/user-attachments/assets/6fbc0514-e806-4856-a6ff-6b0b71a933af" />
+<img width="1289" height="662" alt="スクリーンショット (6467)" src="https://github.com/user-attachments/assets/62d18d16-ac08-478d-b758-b1ceba86a26f" />
+
 
 上記にオーナー名前、メールアドレス、パスワードを設定して、「登録⇒更新」する。
 
