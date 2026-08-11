@@ -220,7 +220,7 @@ email -> admin@example.com
 
 password -> admin1234
 
-<img width="1202" height="659" alt="スクリーンショット (5760)" src="https://github.com/user-attachments/assets/4dfe1eac-e083-4d73-8331-b963e34fa1c2" />
+<img width="1286" height="677" alt="スクリーンショット (6468)" src="https://github.com/user-attachments/assets/93056d90-c5d0-4c56-82d6-4920f6d2867b" />
 
 ## 店舗代表者アカウント(管理画面から店舗オーナーを決定すること)
 
