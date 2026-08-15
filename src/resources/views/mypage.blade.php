@@ -88,22 +88,21 @@
 
               @if( Auth::check() )
               <!-- // ユーザーがログインしている場合のみ、「いいね」ボタンを表示。 -->
-
               @if(count($shop->likes)==0)
               <!-- // ユーザーがその店舗に「いいね」していない場合。 -->
-
               <form method="POST" action="{{ route('like', ['shop_id' => $shop->id]) }}">
                 @csrf
                 <input class="shop-card__content__icon inactive" type="image" src="/img/unlike.png" alt="いいね" width="32px" height="32px">
                 <!-- // いいねボタンとして「unlike」のアイコンを表示し、クリックすると「いいね」が登録される。 -->
               </form>
               @else
-              @csrf
               <form class="ml-a" method="POST" action="{{ route('unlike', ['shop_id' => $shop->id]) }}">
+                ``@csrf
                 <input class="shop-card__content__icon inactive" type="image" src="/img/like.png" alt="いいねを外す" width="32px" height="32px">
                 <!-- // すでに「いいね」している場合は、いいね解除のアイコンを表示し、クリックでいいねを外す。 -->
               </form>
               @endif
+              
               @endif
             </div>
           </div>

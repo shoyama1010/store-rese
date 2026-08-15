@@ -100,7 +100,7 @@ export default function ShopDetailPage() {
       </header>
 
       {/* メイン */}
-      <section className="mx-auto grid max-w-[1160px] grid-cols-1 gap-12 px-4 pb-16 lg:grid-cols-2">
+      <section className="mx-auto grid max-w-[1160px] grid-cols-1 gap-10 px-4 pb-16 lg:grid-cols-[1.05fr_0.95fr]">
         {/* 左側 */}
         <div>
           <div className="mb-6 flex items-center gap-4">
