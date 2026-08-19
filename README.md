@@ -150,6 +150,10 @@ http://localhost:3000/shops/[id] (店舗詳細画面)
 - AWS 認証ログイン ⇒ EC2 インスタンス起動
 - URL⇒　http://IPアドレス
 
+尚、認証ログインに関し、下記のメールアドレスとパスワードでお試しください。
+
+メールアドレス：test@example.com、パスワード：password
+
 ■ EC２の環境において、メモリ不足の補うために、将来的に「Swap」を追加予定。（phpmyadminとmailhogは停止させ、MYSQLを立ち上げるため） 
 
 # テーブル設計
