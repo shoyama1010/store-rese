@@ -27,7 +27,7 @@ export default function AdminDashboardPage() {
         });
 
         setOwners(data.owners ?? []);
-      } catch (err: any) {
+      } catch (err: unknown) {
         setError("店舗代表者一覧の取得に失敗しました。");
       } finally {
         setLoading(false);

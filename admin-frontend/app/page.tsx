@@ -65,11 +65,12 @@ export default function HomePage() {
     }
 
     if (sort === "random") {
-      result.sort(() => Math.random() - 0.5);
+      // result.sort(() => Math.random() - 0.5);
+      return result;
     }
 
     return result;
-  }, [shops, area, genre, keyword, sort]);
+  }, [shops, keyword, area, genre, sort]);  
 
   return (
     <main className="min-h-screen bg-[#eeeeee] px-6 py-8">

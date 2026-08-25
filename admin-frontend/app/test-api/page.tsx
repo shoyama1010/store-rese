@@ -11,8 +11,12 @@ export default function TestApi() {
     try {
       const data = await api("/api/ping");
       setOut("PING OK:\n" + JSON.stringify(data, null, 2));
-    } catch (e: any) {
-      setOut("PING ERR: " + e.message);
+    } catch (e: unknown) {
+      if (e instanceof Error) {
+        setOut("PING ERR: " + e.message);
+      } else {
+        setOut("PING ERR: 不明なエラー");
+      }
     }
   };
 
@@ -34,8 +38,12 @@ export default function TestApi() {
       });
       if (!res.ok) throw new Error("login failed");
       setOut("LOGIN OK");
-    } catch (e: any) {
-      setOut("LOGIN ERR: " + e.message);
+    } catch (e: unknown) {
+      if (e instanceof Error) {
+        setOut("LOGIN ERR: " + e.message);
+      } else {
+        setOut("LOGIN ERR: 不明なエラー");
+      }
     }
   };
 
@@ -43,8 +51,12 @@ export default function TestApi() {
     try {
       const data = await api("/api/admin/me");
       setOut("ME OK:\n" + JSON.stringify(data, null, 2));
-    } catch (e: any) {
-      setOut("ME ERR: " + e.message);
+    } catch (e: unknown) {
+      if (e instanceof Error) {
+        setOut("ME ERR: " + e.message);
+      } else {
+        setOut("ME ERR: 不明なエラー");
+      }
     }
   };
 
@@ -57,8 +69,12 @@ export default function TestApi() {
       });
       if (!res.ok) throw new Error("logout failed");
       setOut("LOGOUT OK");
-    } catch (e: any) {
-      setOut("LOGOUT ERR: " + e.message);
+    } catch (e: unknown) {
+      if (e instanceof Error) {
+        setOut("LOGOUT ERR: " + e.message);
+      } else {
+        setOut("LOGOUT ERR: 不明なエラー");
+      }
     }
   };
 

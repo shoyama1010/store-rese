@@ -36,8 +36,12 @@ export default function AdminLoginPage() {
 
       // ③ 成功したら遷移
       router.push("/admin/dashboard");
-    } catch (err: any) {
-      setError("ログインに失敗しました: " + err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError("ログインに失敗しました: " + err.message);
+      } else {
+        setError("ログインに失敗しました: 不明なエラー");
+      }
     } finally {
       setLoading(false);
     }
