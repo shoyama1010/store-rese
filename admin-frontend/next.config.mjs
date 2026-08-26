@@ -6,10 +6,16 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  // 親の package-lock.json を見に行かないように、このプロジェクトをルートと明示
-  workspaceRoot: __dirname,
+  turbopack: {
+    root: __dirname,
+  },
 };
+// const nextConfig = {
+//   // 親の package-lock.json を見に行かないように、このプロジェクトをルートと明示
+//   workspaceRoot: __dirname,
+// };
 
 export default nextConfig;
 
