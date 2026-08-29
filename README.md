@@ -332,6 +332,15 @@ php artisan test --env=testing --filter=OwnerReservationMailTest
 
 php artisan test --env=testing --filter=ReviewFeatureTest
 
+## ReservationFeatureTest
+
+php artisan test --env=testing --filter=ReservationFeatureTest
+
+- ログインユーザーによる予約登録
+- 未認証ユーザーの予約制限
+- 自分の予約内容の変更
+- 他ユーザーの予約変更防止（403）
+
 # 工夫した点
 
 ## バックエンド
