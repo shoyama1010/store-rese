@@ -292,17 +292,42 @@ http://localhost/3000
 
 ## Featureテスト
 
-### OwnerReservationMailTest
+主要機能について Feature Test を実装しています。
+
+### 店舗代表者機能（OwnerReservationMailTest）
 
 - 店舗代表者は予約一覧を閲覧できる
 - 店舗代表者は予約者へメール送信できる
 - 他店舗の予約にはメール送信できない
 
-### ReviewFeatureTest
+### 店舗代表者の認可（OwnerAuthorizationTest）
+
+- 未認証ユーザーの店舗代表者画面へのアクセス制限
+- 店舗代表者による自店舗予約一覧の閲覧
+- 自店舗情報編集画面へのアクセス
+- 一般ユーザーの店舗代表者画面へのアクセス制限
+
+### 口コミ機能(ReviewFeatureTest)
 
 - ログインユーザーは口コミを投稿できる
 - ログインユーザーは自分の口コミを更新できる
 - ログインユーザーは自分の口コミを削除できる
+
+### 予約機能（ReservationFeatureTest）
+
+- ログインユーザーによる予約登録
+- 未認証ユーザーの予約制限
+- 自分の予約内容の変更
+- 他ユーザーの予約変更防止
+
+### 管理者の認可（AdminAuthorizationTest）
+
+- 未認証ユーザーの管理者画面へのアクセス制限
+- 管理者による管理画面へのアクセス
+- 一般ユーザーの管理者画面へのアクセス制限
+- 店舗代表者の管理者画面へのアクセス制限
+- 管理者による店舗代表者管理画面へのアクセス
+
 
 # テスト実行方法
 
@@ -324,22 +349,21 @@ php artisan migrate --env=testing
 
 php artisan test --env=testing
 
-## OwnerReservationMailTest実行
+### OwnerReservationMailTest実行
 
 php artisan test --env=testing --filter=OwnerReservationMailTest
 
-## ReviewFeatureTest実行
+### OwnerAuthorizationTest実行
+
+php artisan test --env=testing --filter=OwnerAuthorizationTest
+
+### ReviewFeatureTest実行
 
 php artisan test --env=testing --filter=ReviewFeatureTest
 
-## ReservationFeatureTest
+### ReservationFeatureTest
 
 php artisan test --env=testing --filter=ReservationFeatureTest
-
-- ログインユーザーによる予約登録
-- 未認証ユーザーの予約制限
-- 自分の予約内容の変更
-- 他ユーザーの予約変更防止（403）
 
 # 工夫した点
 
