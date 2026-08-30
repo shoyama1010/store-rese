@@ -26,6 +26,7 @@ Laravel（Blade）での従来のCRUDから、 徐々にNext.jsを用いたSPA�
 
 - PHP 8.0
 - Laravel 8.4
+- Nginx 1.21.1
 - MySQL 8.0.26
 - PHPUnit
 - MailHog
