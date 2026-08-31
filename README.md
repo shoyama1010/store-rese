@@ -46,7 +46,7 @@ Laravel（Blade）での従来のCRUDから、 徐々にNext.jsを用いたSPA�
 ### 1 Gitリポジトリをクローン
 
 ```bash
-git clone https://github.com/shoyama1010/rese.git
+git clone https://github.com/shoyama1010/store-rese.git
 ```
 
 ### 2 Dockerコンテナを起動
