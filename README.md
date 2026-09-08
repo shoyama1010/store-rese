@@ -368,10 +368,15 @@ php artisan test --env=testing --filter=ReservationFeatureTest
 
 # 工夫した点
 
-## バックエンド
+## 3種類の認証・権限管理
+一般ユーザー、店舗代表者、管理者で利用できる機能が異なるため、Guardを利用したマルチログイン認証を実装しました。
 
-- Guardを利用したマルチログイン認証
-- Policyによる口コミ編集権限制御
+認証後は、それぞれの役割に応じてアクセスできる画面や操作を分けています。（Policyによる口コミ編集権限制御）
+
+- User：店舗検索、予約、お気に入り、口コミ
+- Owner：自店舗の予約管理、予約者へのメール通知、店舗情報管理
+- Admin：店舗代表者管理、口コミ管理
+
 <img width="1293" height="658" alt="スクリーンショット (5641)" src="https://github.com/user-attachments/assets/14117a23-1f55-4875-8e5f-d5b3a223d503" />
 <img width="1269" height="662" alt="スクリーンショット (5640)" src="https://github.com/user-attachments/assets/a2cef40a-b644-46a9-baf9-71af12b5cf86" />
 
