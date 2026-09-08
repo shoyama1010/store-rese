@@ -191,6 +191,7 @@ http://localhost:3000/shops/[id] (店舗詳細画面)
 <img width="1241" height="682" alt="スクリーンショット (5857)" src="https://github.com/user-attachments/assets/6e11cfaf-4011-41c8-b140-fcfb3328fd32" />
 
 口コミ編集機能
+<img width="1293" height="658" alt="スクリーンショット (5641)" src="https://github.com/user-attachments/assets/14117a23-1f55-4875-8e5f-d5b3a223d503" />
 <img width="1269" height="662" alt="スクリーンショット (5640)" src="https://github.com/user-attachments/assets/8d5ea5dc-20ef-4c4e-b6fe-6a239022ac62" />
 
 ## 店舗代表者機能
@@ -371,17 +372,44 @@ php artisan test --env=testing --filter=ReservationFeatureTest
 ## 3種類の認証・権限管理
 一般ユーザー、店舗代表者、管理者で利用できる機能が異なるため、Guardを利用したマルチログイン認証を実装しました。
 
-認証後は、それぞれの役割に応じてアクセスできる画面や操作を分けています。（Policyによる口コミ編集権限制御）
+認証後は、それぞれの役割に応じてアクセスできる画面や操作を分けています。
 
 - User：店舗検索、予約、お気に入り、口コミ
 - Owner：自店舗の予約管理、予約者へのメール通知、店舗情報管理
 - Admin：店舗代表者管理、口コミ管理
 
-<img width="1293" height="658" alt="スクリーンショット (5641)" src="https://github.com/user-attachments/assets/14117a23-1f55-4875-8e5f-d5b3a223d503" />
-<img width="1269" height="662" alt="スクリーンショット (5640)" src="https://github.com/user-attachments/assets/a2cef40a-b644-46a9-baf9-71af12b5cf86" />
+## Policyによる口コミ編集権限制御
 
-- MailHogを利用したメール通知機能
-- PHPUnitによるFeatureテスト実装
+- 口コミの編集・削除では、投稿者本人だけが操作できるようPolicyを利用して認可処理を実装しました。
+
+## お気に入り機能
+
+ユーザーごとに店舗をお気に入り登録・解除できるようにしました。
+
+店舗一覧やマイページから登録状態を確認できる構成にしています。
+
+## 店舗代表者から予約者へのメール通知
+
+店舗代表者が自店舗の予約者へメールを送信できる機能を実装しました。
+
+ローカル環境ではMailHogを利用し、メール内容を確認できるようにしています。
+
+## Feature Testによる動作確認
+
+主要機能についてFeature Testを実装し、以下の動作を確認しています。
+
+- 予約登録・予約変更
+- 他ユーザーの予約変更防止
+- 口コミ投稿・編集・削除
+- 店舗代表者の自店舗アクセス制御
+- 管理者画面へのアクセス制御
+- 予約者へのメール送信
+
+## BladeとNext.jsを併用した構成
+
+Laravel Bladeを中心に構築した既存機能を維持しながら、一部画面をNext.jsで構築しています。
+
+既存機能を一度に置き換えるのではなく、段階的にフロントエンドを分離する構成を試しています。
 
 # 苦労した点
 口コミ編集機能において、最初「UI崩れ」と店舗消えが起こりましたが、正しい画面構成（店舗情報、予約フォーム、全ての口コミ情報ボタン、javascriptで口コミ表示）のために、コントローラーを見直すのが以外と難しかったです。
