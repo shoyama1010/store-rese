@@ -295,14 +295,13 @@
 /* 詳細 */
 .main__flex {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 60px;
     padding: 40px 70px;
 }
 
 .shop-detail {
     width: 50%;
-    /* width: 46%; */
 }
 
 .shop-detail__link {
@@ -322,11 +321,11 @@
 }
 
 .shop-detail__img {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     width: 85%;
     height: 360px;
-    object-fit: cover;
-    margin-top: 25px;
+    /* object-fit: cover; */
+    /* margin-top: 25px; */
 }
 
 .shop-detail__txt {
@@ -340,7 +339,7 @@
     width: 42%;
     margin-left: auto;
     transform: translateY(-30px);
-    height: 300px;
+    /* height: 300px; */
 }
 
 .reservation-card {
@@ -585,4 +584,91 @@
 
 .search-sort-container .sort-box {
     margin-left: 40px;
+}
+
+
+/* =========================================
+   店舗詳細ページ レスポンシブ対応
+========================================= */
+@media screen and (max-width: 768px) {
+
+    /* 左右2カラム → 縦並び */
+    .main__flex {
+        display: block;
+        padding: 20px 16px 40px;
+    }
+
+    /* 店舗詳細 */
+    .shop-detail {
+        width: 100%;
+    }
+
+    .shop-detail__ttl {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    /* 店舗画像 */
+    .shop-detail__img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        margin-top: 20px;
+        object-fit: cover;
+    }
+
+    /* 店舗説明 */
+    .shop-detail__txt {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* 予約エリア */
+    .reservation {
+        width: 100%;
+        height: auto;
+        margin: 30px 0 0;
+        transform: none;
+    }
+
+    /* 予約カード */
+    .reservation-card {
+        width: 100%;
+        height: 480px;
+        margin: 0;
+    }
+
+    .reservation-card__content {
+        padding: 28px 24px 0;
+    }
+
+    .reservation-card__content__ttl {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    /* 日付 */
+    .reservation-card__date-input {
+        width: 100%;
+        max-width: 180px;
+        box-sizing: border-box;
+    }
+
+    /* 時間・人数 */
+    .reservation-card__pull-down {
+        width: 100%;
+    }
+
+    .reservation-card__pull-down select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* 予約ボタン */
+    .reservation-btn {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
 }
