@@ -140,13 +140,10 @@ cd admin-frontend
 
 npm run dev
 
-## ローカル環境（フロントエンド：一部開発URL）
-
-http://localhost:3000 (店舗一覧画面)
-
-http://localhost:3000/shops/[id] (店舗詳細画面)
 
 ## 本番環境（AWS：EC2）
+
+### ＊バックエンド側のみの本番環境
 
 - AWS 認証ログイン ⇒ EC2 インスタンス起動
 - http://52.68.242.6/
@@ -287,8 +284,9 @@ http://localhost/3000
 - 店舗検索
 - エリア検索
 - ジャンル検索
-
 <img width="1239" height="675" alt="スクリーンショット (5658)" src="https://github.com/user-attachments/assets/79cd178b-0b4e-4ee6-9a8a-df2b723c988e" />
+
+http://localhost:3000/shops/[id] (店舗詳細画面)
 
 # テスト(backend)
 
